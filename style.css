@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+
+
+body {
+    background-color: blanchedalmond;
+    padding: 0px;
+    margin: 0px;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+header {
+    background-image: linear-gradient(to bottom, #41c462 ,#168d34);
+    margin: 0px auto;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 2px 2px 2px 2px rgb(145, 144, 144);
+    overflow: hidden; 
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 8px rgba(5, 5, 5, 0.445);
+
+}
+
+header p {
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 8px rgba(5, 5, 5, 0.445);
+}
+
+header  nav {
+    display: flex;
+    justify-content:flex-start;
+   
+}
+
+header > nav > a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 6px 6px 6px;
+    border: none;
+    transition:background-color 0.3s ease,  transform 0.3s ease, color 0.3s ease;
+    margin-right: 10px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 8px rgba(5, 5, 5, 0.445);
+}
+
+header nav a:hover {
+    color: #25ff5f;
+    background-color: #03310f;
+    transform: translateY(-6px);
+}
+
+main {
+    background-color: white;
+    color: black;
+    box-shadow: 2px 2px 2px 2px rgb(145, 144, 144);
+    margin: 0px 100px 10px 100px;
+    padding: 10px;
+    box-sizing: border-box;     
+}
+
+
+main p {
+    font-size: 17px;
+    line-height: 1.5;
+    justify-content: center ;
+}
+
+main p a {
+    color: inherit; /* Herda a cor do elemento pai, geralmente igual ao parágrafo */
+    text-decoration: none; /* Remove o sublinhado */
+}
+.strong {
+    background-color: #8ff3a8;
+    font-weight: bold;
+    padding: 3px;
+    text-decoration: none;
+    
+}
+
+main > h1 {
+    font-family: idroid;
+    color: rgb(7, 168, 88);
+}
+main > h2  { 
+    font-family: idroid;
+    color: rgb(7, 168, 88);
+    background: linear-gradient( to right, rgb(149, 248, 198), rgb(138, 247, 192), rgb(168, 247, 207), rgb(219, 238, 228), rgb(250, 250, 250))
+    
+ }
+ main > p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 30px;
+    text-align: justify;   
+ }
+ 
+ main img {
+    width: 100%;
+ }
+ .droids {
+    display: flex;
+    height: 230px;
+    width: 300px ;
+    justify-content: center;
+    margin: auto;
+ }
+
+ div {
+    background-color: #03310f;
+    padding: 10px;
+    margin: auto;
+ }
+ .video {
+    justify-content: center;
+    margin: 0;
+    display: flex;
+ }
+ div iframe {
+    width: 900px;
+ }
+
+ main aside {
+    background-color: #59d377;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 20px auto;
+    overflow: hidden;
+    
+     
+ }
+
+main aside h3 {
+    background-color: #03310f;
+    color: white;
+    padding: 5px;
+    margin: -5px;
+    margin-right: 10px;
+    margin-left: -5px;
+    border-radius: 2px 2px 2px 2px ;
+    width: 100%;
+}
+main aside p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 30px;
+    text-align: justify;   
+}
+
+main aside ul {
+    display: grid;               /* Usa grid */
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+    list-style: none;        /* Remove os marcadores padrão */
+    padding: 0;
+    margin: 0;
+}
+main aside ul li {
+    font-weight: bold
+}
+
+.lista {
+    list-style: none; /* Remove o marcador padrão */
+    padding: 0;
+    margin: 0;
+  }
+
+  .lista li::before {
+    content: '✔️';  /* Ícone de check */
+    position: absolute;
+    left: 0;
+    color: green;   /* Cor do ícone */
+  }
+    
+  .lista li {
+    width: calc(50% - 10px); /* Define a largura para 50% menos espaço entre os itens */
+    margin-bottom: 10px; /* Espaçamento entre os itens */
+    position: relative;
+    padding-left: 25px;  /* Dá espaço para o ícone de check */
+  }
+
+  footer {
+    background-color: #03310f;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 85%;
+    margin: 0px auto;
+    padding: 3px;
+    justify-content: center;
+    position: relative;
+  }
+
+    
