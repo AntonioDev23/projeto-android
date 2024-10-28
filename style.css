@@ -105,15 +105,32 @@ main > h2  {
  }
  
  main img {
-    width: 100%;
+    width: 100%; /* A imagem ocupa 100% da largura disponível */
+    height: auto; /* Mantém a proporção original */
+    object-fit: contain; /* Ajusta a imagem sem distorções */
  }
+
  .droids {
     display: flex;
-    height: 230px;
-    width: 300px ;
     justify-content: center;
+    align-items: center; /* Centraliza no eixo vertical */
     margin: auto;
+    padding: 10px;
+    max-width: 100%; /* Garante que o contêiner não ultrapasse a tela */
+    height: auto;
+    width: 100%; /* Adapta a imagem à largura do contêiner */
+    max-width: 400px; /* Limita o tamanho em telas maiores */
+    height: auto; /* Mantém a proporção */
+    object-fit: contain; /* Evita distorções */
+    border-radius: 8px; /* Opcional: arredonda os cantos */
  }
+
+ @media (max-width: 768px) {
+    .droids {
+        flex-direction: column; /* Empilha elementos em telas menores */
+        width: 90%; /* O contêiner ocupa 90% da largura da tela */
+    }
+}
 
  div {
     background-color: #03310f;
@@ -121,12 +138,17 @@ main > h2  {
     margin: auto;
  }
  .video {
+    display: flex;
     justify-content: center;
     margin: 0;
-    display: flex;
+    padding: 0;
  }
  div iframe {
-    width: 900px;
+    width: 100%; /* Adapta à largura da tela */
+    max-width: 900px; /* Limita no desktop */
+    height: auto;
+    aspect-ratio: 16 / 9; /* Mantém a proporção do vídeo */
+    padding: 20px;
  }
 
  main aside {
