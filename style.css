@@ -38,13 +38,14 @@ header p {
 header  nav {
     display: flex;
     justify-content:flex-start;
-   
+    flex-wrap: wrap;
+    margin-left: 10px;
 }
 
 header > nav > a {
     text-decoration: none;
     color: rgb(255, 255, 255);
-    padding: 10px;
+    padding: 10px 8px;
     border: none;
     transition:background-color 0.3s ease,  transform 0.3s ease, color 0.3s ease;
     margin-right: 20px;
